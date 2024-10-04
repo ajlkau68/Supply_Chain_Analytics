@@ -26,6 +26,12 @@ The management of AtliQ Mart has requested the Supply Chain Analytics team to tr
 5. Identify customers consistently falling below target service levels, flagging high-risk customers (especially those with churn potential)
 6. Broke down OTIF% performance by product identifying high-demand products with frequent delivery issues.
 
+---
+
+![Atliq-mart-dashboard](https://github.com/user-attachments/assets/70704927-6fce-481b-badc-b5a23233c399)
+
+---
+
 ## Data Sources
 
 The project will involve the following datasets:
@@ -41,7 +47,8 @@ The project will involve the following datasets:
    - `dim_products.csv` contains information on  product_name, product_id, and category.
   
 ## Tools
-- `Power BI` - Data Analysis & Visualization
+- `Python` - Data Analysis
+- `Power BI` - Visualization
 
 ## Analysis Workflow
 
