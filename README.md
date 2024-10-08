@@ -1,4 +1,4 @@
-# AtliQ Mart Supply Chain Analytics Project
+ # AtliQ Mart Supply Chain Analytics Project
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ The project will involve the following datasets:
 
 1. **Order Line and Aggregate Order Data**:
    - `fact_order_lines.csv` contains information on customer orders, delivery dates, promised delivery dates, and quantities ordered and delivered.
-   - `fact_orders_aggregate.csv` contains information aggregate customer orders, order placement date, OT, IF, and OTIF categorization.
+   - `fact_orders_aggregate.csv` contains information on aggregate customer orders, order placement date, OT, IF, and OTIF categorization.
 2. **Customer Data**:
    - `dim_customers.csv` contains information on customer_id, customer_name, and city.
 3. **Order Target Data**:
@@ -65,7 +65,7 @@ EDA involved exploring the data to answer questions such as:
   - Are there any specific product categories or SKUs that are frequently delivered late or in incomplete quantities?
   - What percentage of orders meet the OTIF% targets on a city-wise and customer-wise basis?
   - Are there specific routes, warehouses, or cities where performance is lower?
-  - How do lead times and fulfillment rates differ across the three current operational cities (Surat, Ahmedabad, Vadodara)?
+  - How do lead times and fulfilment rates differ across the three current operational cities (Surat, Ahmedabad, Vadodara)?
 
 ### Step 3: **Service Level Metrics Calculation**
    - Calculate daily OT%, IF%, and OTIF% metrics for each customer and product category.
@@ -94,24 +94,24 @@ EDA involved exploring the data to answer questions such as:
    - **On-Time In-Full Orders (OTIF)**: 9K (29.02%)
 
 2. **Order Lines Insights**:
-   - **Ahmedabad and Vadodara** have the same number of order lines (20K), while **Surat** has slightly fewer (18K). It looks like distribution or fulfillment issues may not be too city-dependent, given similar order volumes.
+   - **Ahmedabad and Vadodara** have the same number of order lines (20K), while **Surat** has slightly fewer (18K). It looks like distribution or fulfilment issues may not be too city-dependent, given similar order volumes.
    
 
 3. **Product Insights**:
    - LIFR and VOFR for different products show that there is a disparity between them.
-   - For example, **AM Butter 250** has a **LIFR% of 68.66%** but a **VOFR% of 95.98%**. This indicates fulfillment in terms of product lines is low, but overall value fulfillment is much higher.
+   - For example, **AM Butter 250** has a **LIFR% of 68.66%** but a **VOFR% of 95.98%**. This indicates fulfilment in terms of product lines is low, but overall value fulfilment is much higher.
    - **AM Milk 100** shows both lower LIFR (65.55%) and VOFR (96.43%).
 
 4. **Lead Time Insights**:
    - Most delayed products fall within a **1-day delay**, with a product count of **37K**. Some products have experienced **2-day** delays (around 8K), while **3-day delays** seem to affect around 5K orders.
    - **Ahmedabad** has 12K orders with a 1-day delay and a smaller amount with 2-day delays.
    - **Surat** shows 12K orders delayed by 1 day and some at 3 days.
-   - **Vadodara** also has significant delays around 12K for 1-day, and a few around 3 days.
+   - **Vadodara** also has significant delays of around 12K for 1 day, and a few around 3 days.
    - Delays seem uniformly distributed across cities, but 1-day delays dominate the counts.
   
 5. **Service Line Insights**:
     - **Overall OTIF% is Critically Low**:
-      - At only **29.02%**, OTIF is critically low and far below target, indicating that nearly 70% of orders are not being delivered both on time and in full. This is a severe issue and reflects inefficiencies across both supply chain and delivery processes.
+      - At only **29.02%**, OTIF is critically low and far below target, indicating that nearly 70% of orders are not being delivered on time and in full. This is a severe issue and reflects inefficiencies across both supply chain and delivery processes.
     - **In-Full (IF%) Performance**:
       - With only **52.78%** of orders being fulfilled in full, stock availability or order picking accuracy could be major bottlenecks. It’s critical to address inventory management issues, particularly in underperforming cities like Vadodara.
     - **On-Time Delivery**:
@@ -131,15 +131,15 @@ EDA involved exploring the data to answer questions such as:
      - **Elite Mart**: Similarly, a LIFR of **75.49%**, but lower OTIF.
      - **Ral Fresh** has a decent LIFR% of **75.61%**, but this hasn’t translated into high OTIF due to low on-time performance.
      - **Vijay Stores** has the lowest LIFR% at **59.29%**.
-     - LIFR% drops significantly for some customers like **Acclab Stores (51.53%)**, indicating lower fulfillment performance for these specific customers.
+     - LIFR% drops significantly for some customers like **Acclab Stores (51.53%)**, indicating lower fulfilment performance for these specific customers.
 
 ## Key Insights:
 
 1. **Low LIFR% Across the Board**:
-   - The average **LIFR%** across products and customers is around 65-66%. There’s a significant opportunity to improve fulfillment at the line-item level. The business is able to fulfill high-value orders (as seen with the VOFR), but there are gaps in meeting individual product line demands.
+   - The average **LIFR%** across products and customers is around 65-66%. There’s a significant opportunity to improve fulfilment at the line-item level. The business can fulfil high-value orders (as seen with the VOFR), but there are gaps in meeting individual product line demands.
 
 2. **Customer Fulfillment Variability**:
-    - At only **29.02%**, OTIF is far below target, indicating that nearly 70% of orders are not being delivered both on time and in full. This is a severe issue and reflects inefficiencies across both supply chain and delivery processes.
+    - At only **29.02%**, OTIF is far below target, indicating that nearly 70% of orders are not being delivered on time and in full. This is a severe issue and reflects inefficiencies across both supply chain and delivery processes.
     - With only **52.78%** of orders being fulfilled in full, stock availability or order picking accuracy could be major bottlenecks. It’s critical to address inventory management issues, particularly in underperforming cities like Vadodara.
     - While OT% is better than OTIF and IF%, it is still underperforming at **59.03%**, which means over 40% of deliveries are late. This suggests systemic delivery or logistics issues affecting all cities, with none of the cities hitting a satisfactory OT%.
 
@@ -164,7 +164,7 @@ EDA involved exploring the data to answer questions such as:
 
 4. **Customer-Specific Initiatives**:
    - Work with low-performing customers like **Vijay Stores** and **Acclab Stores** to understand their unique challenges and devise solutions to improve LIFR% levels.
-   - Engage with customers like **Chiptec Stores** and **Info Stores** to understand their pain points and work towards improving order fulfillment for them.
+   - Engage with customers like **Chiptec Stores** and **Info Stores** to understand their pain points and work towards improving order fulfilment for them.
    - Consider implementing dedicated service-level agreements (SLAs) for top customers to ensure higher OTIF% and greater customer satisfaction.
 
 5. **Focus on OTIF% Improvements**:
@@ -172,8 +172,8 @@ EDA involved exploring the data to answer questions such as:
    - Implement real-time tracking and performance dashboards for operational teams to monitor OTIF and take corrective actions.
 
 6. **City-Specific Action Plans**:
-   - **Vadodara** shows underperformance in both OT% and IF%. Investigate regional logistics or warehouse bottlenecks that might be contributing to the delays and stock shortages in this area.
-   - Since no city is performing exceptionally well, roll out initiatives aimed at improving both in-full fulfillment and on-time delivery across all locations.
+   - **Vadodara** shows underperformance in both OT% and IF%. Investigate regional logistics or warehouse bottlenecks that might contribute to delays and stock shortages in this area.
+   - Since no city is performing exceptionally well, roll out initiatives aimed at improving both in-full fulfilment and on-time delivery across all locations.
      
 7. **Balance Inventory and Demand**:
    - Products like **AM Butter 250** and **AM Milk 100** may require better inventory control, as their LIFR is lagging despite high VOFR. Matching stock availability to demand more closely will help here.
@@ -183,7 +183,7 @@ EDA involved exploring the data to answer questions such as:
    - Analyze current shipping times, warehouse processing, and last-mile delivery to uncover inefficiencies.
 
 ## Limitations
-- Unavalaibilty of quality data on lead times or logistics operations. The absence of quality data on supplier performance, replenishment times, or the efficiency of inbound logistics makes it difficult to making it hard to pinpoint delays and assess if poor supplier performance is contributing to the low IF% and OTIF%.
+- Quality data on lead times or logistics operations is unavailable. The absence of quality data on supplier performance, replenishment times, or the efficiency of inbound logistics makes it difficult to pinpoint delays and assess if poor supplier performance contributes to the low IF% and OTIF%.
 
 ## Visualizations
 Explore the live Power BI dashboard for interactive visualizations:
