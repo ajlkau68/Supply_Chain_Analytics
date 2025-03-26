@@ -24,7 +24,7 @@ The management of AtliQ Mart has requested the Supply Chain Analytics team to tr
 3. Pinpoint the causes of delivery delays or incomplete orders.
 4. Analyze the relationship between service levels and contract renewals.
 5. Identify customers consistently falling below target service levels, flagging high-risk customers (especially those with churn potential)
-6. Broke down OTIF% performance by product identifying high-demand products with frequent delivery issues.
+6. Break down OTIF% performance by product identifying high-demand products with frequent delivery issues.
 
 ---
 
